@@ -72,6 +72,11 @@ button {
   background: color-mix(in srgb, var(--wise-sys-color-on-surface-inverse) 10%, transparent);
 }
 
+.app-shell[data-theme="dark"] .home-header .icon-action {
+  color: color-mix(in srgb, var(--wise-sys-color-action-primary) 32%, var(--wise-sys-color-on-surface-inverse));
+  background: color-mix(in srgb, var(--wise-sys-color-action-primary) 18%, transparent);
+}
+
 .app-shell[data-theme="dark"] .sentiment-title,
 .app-shell[data-theme="dark"] .sentiment-metric-value {
   color: var(--wise-sys-color-on-surface-inverse);
@@ -125,6 +130,22 @@ button {
 
 .app-shell[data-theme="dark"] .feed-author .icon-action {
   color: var(--wise-sys-color-action-secondary);
+}
+
+.app-shell[data-theme="dark"] .feed-section .section-heading .eyebrow,
+.app-shell[data-theme="dark"] .feed-section .tag,
+.app-shell[data-theme="dark"] .feed-section .feed-author .icon-action {
+  color: color-mix(in srgb, var(--wise-sys-color-action-primary) 32%, var(--wise-sys-color-on-surface-inverse));
+}
+
+.app-shell[data-theme="dark"] .feed-section .tag,
+.app-shell[data-theme="dark"] .feed-section .feed-author .icon-action {
+  background: color-mix(in srgb, var(--wise-sys-color-action-primary) 18%, transparent);
+}
+
+.app-shell[data-theme="dark"] .bottom-nav .nav-item.is-active {
+  color: color-mix(in srgb, var(--wise-sys-color-action-primary) 32%, var(--wise-sys-color-on-surface-inverse));
+  background: color-mix(in srgb, var(--wise-sys-color-action-primary) 18%, transparent);
 }
 
 .app-shell[data-theme="dark"] .trade-position {

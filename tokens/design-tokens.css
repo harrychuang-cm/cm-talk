@@ -9,6 +9,7 @@
   --wise-ref-color-neutral-500: #777a75;
   --wise-ref-color-neutral-700: #4a4d48;
   --wise-ref-color-neutral-900: #0a0b09;
+  --wise-ref-color-neutral-1000: #000000;
 
   --wise-ref-color-green-50: #effbe7;
   --wise-ref-color-green-100: #dcfac4;
@@ -19,29 +20,39 @@
   --wise-ref-color-green-900: #071f00;
 
   --wise-ref-color-yellow-100: #fff7a8;
-  --wise-ref-color-yellow-300: #fff176;
+  --wise-ref-color-yellow-300: #FFF70F;
   --wise-ref-color-yellow-500: #f2df4f;
+  --wise-ref-color-lime-300: #B6FF7A;
+  --wise-ref-color-lime-100: #d8ffc4;
+  --wise-ref-color-lime-500: #63d91d;
   --wise-ref-color-burgundy-800: #3a0407;
   --wise-ref-color-burgundy-900: #2a0005;
+  --wise-ref-color-blue-50: #eef1ff;
+  --wise-ref-color-blue-100: #dfe5ff;
   --wise-ref-color-blue-300: #9dbbf2;
   --wise-ref-color-blue-500: #8795c9;
+  --wise-ref-color-blue-600: #2A4AFF;
+  --wise-ref-color-blue-700: #1d35c8;
+  --wise-ref-color-blue-900: #06123a;
   --wise-ref-color-peach-300: #f7bf82;
   --wise-ref-color-coral-300: #ff8391;
   --wise-ref-color-teal-300: #45cfa9;
 
   --wise-ref-shadow-0: none;
-  --wise-ref-shadow-1: 0 8px 20px rgb(10 11 9 / 0.08);
+  --wise-ref-shadow-1: 0 10px 28px rgb(42 74 255 / 0.10);
   --wise-ref-shadow-2: 0 18px 44px rgb(10 48 0 / 0.14);
   --wise-ref-shadow-3: 0 28px 72px rgb(10 48 0 / 0.18);
 
   --wise-ref-space-0: 0;
   --wise-ref-space-2: 2px;
+  --wise-ref-space-3: 3px;
   --wise-ref-space-4: 4px;
   --wise-ref-space-8: 8px;
   --wise-ref-space-12: 12px;
   --wise-ref-space-16: 16px;
   --wise-ref-space-20: 20px;
   --wise-ref-space-24: 24px;
+  --wise-ref-space-30: 30px;
   --wise-ref-space-32: 32px;
   --wise-ref-space-40: 40px;
   --wise-ref-space-48: 48px;
@@ -50,17 +61,21 @@
   --wise-ref-space-96: 96px;
   --wise-ref-space-128: 128px;
 
+  --wise-ref-size-24: 24px;
   --wise-ref-size-32: 32px;
   --wise-ref-size-40: 40px;
   --wise-ref-size-44: 44px;
   --wise-ref-size-48: 48px;
   --wise-ref-size-56: 56px;
+  --wise-ref-size-60: 60px;
   --wise-ref-size-64: 64px;
   --wise-ref-size-72: 72px;
   --wise-ref-size-80: 80px;
   --wise-ref-size-88: 88px;
   --wise-ref-size-96: 96px;
+  --wise-ref-size-100: 100px;
   --wise-ref-size-112: 112px;
+  --wise-ref-size-320: 320px;
 
   --wise-ref-radius-0: 0;
   --wise-ref-radius-8: 8px;
@@ -80,6 +95,7 @@
   --wise-ref-font-weight-bold: 750;
   --wise-ref-font-weight-heavy: 900;
   --wise-ref-font-size-13: 13px;
+  --wise-ref-font-size-14: 14px;
   --wise-ref-font-size-15: 15px;
   --wise-ref-font-size-17: 17px;
   --wise-ref-font-size-20: 20px;
@@ -111,32 +127,37 @@
   /* System layer: shared product semantics. */
   --wise-sys-color-surface: var(--wise-ref-color-neutral-0);
   --wise-sys-color-on-surface: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-surface-dark: var(--wise-ref-color-neutral-1000);
   --wise-sys-color-surface-muted: var(--wise-ref-color-neutral-100);
   --wise-sys-color-on-surface-muted: var(--wise-ref-color-neutral-700);
   --wise-sys-color-surface-raised: var(--wise-ref-color-neutral-0);
   --wise-sys-color-on-surface-raised: var(--wise-ref-color-neutral-900);
-  --wise-sys-color-surface-inverse: var(--wise-ref-color-green-700);
+  --wise-sys-color-surface-inverse: var(--wise-ref-color-blue-900);
   --wise-sys-color-on-surface-inverse: var(--wise-ref-color-neutral-0);
-  --wise-sys-color-surface-brand: var(--wise-ref-color-green-700);
-  --wise-sys-color-on-surface-brand: var(--wise-ref-color-green-300);
+  --wise-sys-color-surface-brand: var(--wise-ref-color-blue-900);
+  --wise-sys-color-on-surface-brand: var(--wise-ref-color-blue-100);
   --wise-sys-color-surface-feature-warm: var(--wise-ref-color-yellow-300);
   --wise-sys-color-on-surface-feature-warm: var(--wise-ref-color-neutral-900);
   --wise-sys-color-surface-feature-deep: var(--wise-ref-color-burgundy-900);
   --wise-sys-color-on-surface-feature-deep: var(--wise-ref-color-neutral-0);
 
-  --wise-sys-color-action-primary: var(--wise-ref-color-green-300);
-  --wise-sys-color-action-primary-hover: var(--wise-ref-color-green-100);
-  --wise-sys-color-action-primary-pressed: var(--wise-ref-color-green-400);
-  --wise-sys-color-on-action-primary: var(--wise-ref-color-green-900);
+  --wise-sys-color-action-primary: var(--wise-ref-color-blue-600);
+  --wise-sys-color-action-primary-hover: var(--wise-ref-color-blue-700);
+  --wise-sys-color-action-primary-pressed: var(--wise-ref-color-blue-700);
+  --wise-sys-color-on-action-primary: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-action-secondary: var(--wise-ref-color-lime-300);
+  --wise-sys-color-action-secondary-hover: var(--wise-ref-color-lime-100);
+  --wise-sys-color-action-secondary-pressed: var(--wise-ref-color-lime-500);
+  --wise-sys-color-on-action-secondary: var(--wise-ref-color-neutral-900);
   --wise-sys-color-action-inverse: var(--wise-ref-color-neutral-900);
   --wise-sys-color-action-inverse-hover: var(--wise-ref-color-neutral-700);
   --wise-sys-color-on-action-inverse: var(--wise-ref-color-neutral-0);
-  --wise-sys-color-focus-ring: var(--wise-ref-color-green-600);
+  --wise-sys-color-focus-ring: var(--wise-ref-color-blue-600);
   --wise-sys-color-border-subtle: var(--wise-ref-color-neutral-200);
   --wise-sys-color-border-strong: var(--wise-ref-color-neutral-300);
-  --wise-sys-color-border-selected: var(--wise-ref-color-green-600);
+  --wise-sys-color-border-selected: var(--wise-ref-color-blue-600);
   --wise-sys-color-icon-muted: var(--wise-ref-color-neutral-500);
-  --wise-sys-color-icon-active: var(--wise-ref-color-green-600);
+  --wise-sys-color-icon-active: var(--wise-ref-color-blue-600);
   --wise-sys-color-chart-blue: var(--wise-ref-color-blue-500);
   --wise-sys-color-chart-blue-soft: var(--wise-ref-color-blue-300);
   --wise-sys-color-chart-peach: var(--wise-ref-color-peach-300);
@@ -158,16 +179,20 @@
   --wise-sys-space-inset-md: var(--wise-ref-space-16);
   --wise-sys-space-inset-lg: var(--wise-ref-space-24);
   --wise-sys-space-inset-xl: var(--wise-ref-space-32);
-  --wise-sys-space-page-inline: var(--wise-ref-space-24);
+  --wise-sys-space-page-inline: var(--wise-ref-space-20);
   --wise-sys-space-page-block: var(--wise-ref-space-32);
 
   --wise-sys-size-control-sm: var(--wise-ref-size-40);
   --wise-sys-size-control-md: var(--wise-ref-size-48);
   --wise-sys-size-control-lg: var(--wise-ref-size-56);
+  --wise-sys-size-control-xl: var(--wise-ref-size-60);
   --wise-sys-size-avatar-md: var(--wise-ref-size-56);
   --wise-sys-size-avatar-lg: var(--wise-ref-size-72);
+  --wise-sys-size-media-md: var(--wise-ref-size-80);
   --wise-sys-size-header: var(--wise-ref-size-88);
-  --wise-sys-size-nav: var(--wise-ref-size-96);
+  --wise-sys-size-nav: var(--wise-ref-size-80);
+  --wise-sys-size-content-sm: var(--wise-ref-size-100);
+  --wise-sys-size-content-lg: var(--wise-ref-size-320);
 
   --wise-sys-radius-control: var(--wise-ref-radius-pill);
   --wise-sys-radius-icon: var(--wise-ref-radius-pill);
@@ -231,6 +256,10 @@
   --wise-comp-button-primary-foreground: var(--wise-sys-color-on-action-primary);
   --wise-comp-button-primary-hover-container: var(--wise-sys-color-action-primary-hover);
   --wise-comp-button-primary-pressed-container: var(--wise-sys-color-action-primary-pressed);
+  --wise-comp-button-secondary-container: var(--wise-sys-color-action-secondary);
+  --wise-comp-button-secondary-foreground: var(--wise-sys-color-on-action-secondary);
+  --wise-comp-button-secondary-hover-container: var(--wise-sys-color-action-secondary-hover);
+  --wise-comp-button-secondary-pressed-container: var(--wise-sys-color-action-secondary-pressed);
   --wise-comp-button-inverse-container: var(--wise-sys-color-action-inverse);
   --wise-comp-button-inverse-foreground: var(--wise-sys-color-on-action-inverse);
   --wise-comp-button-height: var(--wise-sys-size-control-lg);
@@ -256,6 +285,11 @@
   --wise-comp-bottom-nav-label-size: var(--wise-sys-type-body-sm-size);
   --wise-comp-bottom-nav-label-weight: var(--wise-sys-font-weight-label);
 
+  --wise-comp-shortcut-card-size: var(--wise-sys-size-content-sm);
+  --wise-comp-shortcut-card-icon-image-size: var(--wise-sys-size-control-xl);
+
+  --wise-comp-insight-card-icon-image-size: var(--wise-sys-size-control-xl);
+
   --wise-comp-card-background: var(--wise-sys-color-surface-raised);
   --wise-comp-card-foreground: var(--wise-sys-color-on-surface-raised);
   --wise-comp-card-radius: var(--wise-sys-radius-card-md);
@@ -270,6 +304,7 @@
   --wise-comp-promo-card-radius: var(--wise-sys-radius-card-lg);
   --wise-comp-promo-card-padding: var(--wise-sys-space-inset-lg);
   --wise-comp-promo-card-shadow: var(--wise-sys-elevation-flat);
+  --wise-comp-hero-card-height: var(--wise-sys-size-content-lg);
 
   --wise-comp-card-carousel-shadow: var(--wise-sys-elevation-card);
   --wise-comp-card-carousel-radius: var(--wise-sys-radius-card-sm);

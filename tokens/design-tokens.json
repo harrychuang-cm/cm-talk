@@ -13,7 +13,8 @@
           "300": { "$type": "color", "$value": "#d1d5ce" },
           "500": { "$type": "color", "$value": "#777a75" },
           "700": { "$type": "color", "$value": "#4a4d48" },
-          "900": { "$type": "color", "$value": "#0a0b09" }
+          "900": { "$type": "color", "$value": "#0a0b09" },
+          "1000": { "$type": "color", "$value": "#000000" }
         },
         "green": {
           "50": { "$type": "color", "$value": "#effbe7" },
@@ -26,16 +27,26 @@
         },
         "yellow": {
           "100": { "$type": "color", "$value": "#fff7a8" },
-          "300": { "$type": "color", "$value": "#fff176" },
+          "300": { "$type": "color", "$value": "#FFF70F" },
           "500": { "$type": "color", "$value": "#f2df4f" }
+        },
+        "lime": {
+          "100": { "$type": "color", "$value": "#d8ffc4" },
+          "300": { "$type": "color", "$value": "#B6FF7A" },
+          "500": { "$type": "color", "$value": "#63d91d" }
         },
         "burgundy": {
           "800": { "$type": "color", "$value": "#3a0407" },
           "900": { "$type": "color", "$value": "#2a0005" }
         },
         "blue": {
+          "50": { "$type": "color", "$value": "#eef1ff" },
+          "100": { "$type": "color", "$value": "#dfe5ff" },
           "300": { "$type": "color", "$value": "#9dbbf2" },
-          "500": { "$type": "color", "$value": "#8795c9" }
+          "500": { "$type": "color", "$value": "#8795c9" },
+          "600": { "$type": "color", "$value": "#2A4AFF" },
+          "700": { "$type": "color", "$value": "#1d35c8" },
+          "900": { "$type": "color", "$value": "#06123a" }
         },
         "peach": {
           "300": { "$type": "color", "$value": "#f7bf82" }
@@ -50,12 +61,14 @@
       "space": {
         "0": { "$type": "dimension", "$value": "0" },
         "2": { "$type": "dimension", "$value": "2px" },
+        "3": { "$type": "dimension", "$value": "3px" },
         "4": { "$type": "dimension", "$value": "4px" },
         "8": { "$type": "dimension", "$value": "8px" },
         "12": { "$type": "dimension", "$value": "12px" },
         "16": { "$type": "dimension", "$value": "16px" },
         "20": { "$type": "dimension", "$value": "20px" },
         "24": { "$type": "dimension", "$value": "24px" },
+        "30": { "$type": "dimension", "$value": "30px" },
         "32": { "$type": "dimension", "$value": "32px" },
         "40": { "$type": "dimension", "$value": "40px" },
         "48": { "$type": "dimension", "$value": "48px" },
@@ -65,17 +78,21 @@
         "128": { "$type": "dimension", "$value": "128px" }
       },
       "size": {
+        "24": { "$type": "dimension", "$value": "24px" },
         "32": { "$type": "dimension", "$value": "32px" },
         "40": { "$type": "dimension", "$value": "40px" },
         "44": { "$type": "dimension", "$value": "44px" },
         "48": { "$type": "dimension", "$value": "48px" },
         "56": { "$type": "dimension", "$value": "56px" },
+        "60": { "$type": "dimension", "$value": "60px" },
         "64": { "$type": "dimension", "$value": "64px" },
         "72": { "$type": "dimension", "$value": "72px" },
         "80": { "$type": "dimension", "$value": "80px" },
         "88": { "$type": "dimension", "$value": "88px" },
         "96": { "$type": "dimension", "$value": "96px" },
-        "112": { "$type": "dimension", "$value": "112px" }
+        "100": { "$type": "dimension", "$value": "100px" },
+        "112": { "$type": "dimension", "$value": "112px" },
+        "320": { "$type": "dimension", "$value": "320px" }
       },
       "radius": {
         "0": { "$type": "dimension", "$value": "0" },
@@ -101,6 +118,7 @@
       },
       "fontSize": {
         "13": { "$type": "dimension", "$value": "13px" },
+        "14": { "$type": "dimension", "$value": "14px" },
         "15": { "$type": "dimension", "$value": "15px" },
         "17": { "$type": "dimension", "$value": "17px" },
         "20": { "$type": "dimension", "$value": "20px" },
@@ -127,7 +145,7 @@
       },
       "shadow": {
         "0": { "$type": "shadow", "$value": "none" },
-        "1": { "$type": "shadow", "$value": "0 8px 20px rgb(10 11 9 / 0.08)" },
+        "1": { "$type": "shadow", "$value": "0 10px 28px rgb(42 74 255 / 0.10)" },
         "2": { "$type": "shadow", "$value": "0 18px 44px rgb(10 48 0 / 0.14)" },
         "3": { "$type": "shadow", "$value": "0 28px 72px rgb(10 48 0 / 0.18)" }
       },
@@ -147,31 +165,36 @@
       "color": {
         "surface": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
         "onSurface": { "$type": "color", "$value": "{wise.ref.color.neutral.900}" },
+        "surfaceDark": { "$type": "color", "$value": "{wise.ref.color.neutral.1000}" },
         "surfaceMuted": { "$type": "color", "$value": "{wise.ref.color.neutral.100}" },
         "onSurfaceMuted": { "$type": "color", "$value": "{wise.ref.color.neutral.700}" },
         "surfaceRaised": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
         "onSurfaceRaised": { "$type": "color", "$value": "{wise.ref.color.neutral.900}" },
-        "surfaceInverse": { "$type": "color", "$value": "{wise.ref.color.green.700}" },
+        "surfaceInverse": { "$type": "color", "$value": "{wise.ref.color.blue.900}" },
         "onSurfaceInverse": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
-        "surfaceBrand": { "$type": "color", "$value": "{wise.ref.color.green.700}" },
-        "onSurfaceBrand": { "$type": "color", "$value": "{wise.ref.color.green.300}" },
+        "surfaceBrand": { "$type": "color", "$value": "{wise.ref.color.blue.900}" },
+        "onSurfaceBrand": { "$type": "color", "$value": "{wise.ref.color.blue.100}" },
         "surfaceFeatureWarm": { "$type": "color", "$value": "{wise.ref.color.yellow.300}" },
         "onSurfaceFeatureWarm": { "$type": "color", "$value": "{wise.ref.color.neutral.900}" },
         "surfaceFeatureDeep": { "$type": "color", "$value": "{wise.ref.color.burgundy.900}" },
         "onSurfaceFeatureDeep": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
-        "actionPrimary": { "$type": "color", "$value": "{wise.ref.color.green.300}" },
-        "actionPrimaryHover": { "$type": "color", "$value": "{wise.ref.color.green.100}" },
-        "actionPrimaryPressed": { "$type": "color", "$value": "{wise.ref.color.green.400}" },
-        "onActionPrimary": { "$type": "color", "$value": "{wise.ref.color.green.900}" },
+        "actionPrimary": { "$type": "color", "$value": "{wise.ref.color.blue.600}" },
+        "actionPrimaryHover": { "$type": "color", "$value": "{wise.ref.color.blue.700}" },
+        "actionPrimaryPressed": { "$type": "color", "$value": "{wise.ref.color.blue.700}" },
+        "onActionPrimary": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
+        "actionSecondary": { "$type": "color", "$value": "{wise.ref.color.lime.300}" },
+        "actionSecondaryHover": { "$type": "color", "$value": "{wise.ref.color.lime.100}" },
+        "actionSecondaryPressed": { "$type": "color", "$value": "{wise.ref.color.lime.500}" },
+        "onActionSecondary": { "$type": "color", "$value": "{wise.ref.color.neutral.900}" },
         "actionInverse": { "$type": "color", "$value": "{wise.ref.color.neutral.900}" },
         "actionInverseHover": { "$type": "color", "$value": "{wise.ref.color.neutral.700}" },
         "onActionInverse": { "$type": "color", "$value": "{wise.ref.color.neutral.0}" },
-        "focusRing": { "$type": "color", "$value": "{wise.ref.color.green.600}" },
+        "focusRing": { "$type": "color", "$value": "{wise.ref.color.blue.600}" },
         "borderSubtle": { "$type": "color", "$value": "{wise.ref.color.neutral.200}" },
         "borderStrong": { "$type": "color", "$value": "{wise.ref.color.neutral.300}" },
-        "borderSelected": { "$type": "color", "$value": "{wise.ref.color.green.600}" },
+        "borderSelected": { "$type": "color", "$value": "{wise.ref.color.blue.600}" },
         "iconMuted": { "$type": "color", "$value": "{wise.ref.color.neutral.500}" },
-        "iconActive": { "$type": "color", "$value": "{wise.ref.color.green.600}" },
+        "iconActive": { "$type": "color", "$value": "{wise.ref.color.blue.600}" },
         "chartBlue": { "$type": "color", "$value": "{wise.ref.color.blue.500}" },
         "chartBlueSoft": { "$type": "color", "$value": "{wise.ref.color.blue.300}" },
         "chartPeach": { "$type": "color", "$value": "{wise.ref.color.peach.300}" },
@@ -194,17 +217,21 @@
         "insetMd": { "$type": "dimension", "$value": "{wise.ref.space.16}" },
         "insetLg": { "$type": "dimension", "$value": "{wise.ref.space.24}" },
         "insetXl": { "$type": "dimension", "$value": "{wise.ref.space.32}" },
-        "pageInline": { "$type": "dimension", "$value": "{wise.ref.space.24}" },
+        "pageInline": { "$type": "dimension", "$value": "{wise.ref.space.20}" },
         "pageBlock": { "$type": "dimension", "$value": "{wise.ref.space.32}" }
       },
       "size": {
         "controlSm": { "$type": "dimension", "$value": "{wise.ref.size.40}" },
         "controlMd": { "$type": "dimension", "$value": "{wise.ref.size.48}" },
         "controlLg": { "$type": "dimension", "$value": "{wise.ref.size.56}" },
+        "controlXl": { "$type": "dimension", "$value": "{wise.ref.size.60}" },
         "avatarMd": { "$type": "dimension", "$value": "{wise.ref.size.56}" },
         "avatarLg": { "$type": "dimension", "$value": "{wise.ref.size.72}" },
+        "mediaMd": { "$type": "dimension", "$value": "{wise.ref.size.80}" },
         "header": { "$type": "dimension", "$value": "{wise.ref.size.88}" },
-        "nav": { "$type": "dimension", "$value": "{wise.ref.size.96}" }
+        "nav": { "$type": "dimension", "$value": "{wise.ref.size.80}" },
+        "contentSm": { "$type": "dimension", "$value": "{wise.ref.size.100}" },
+        "contentLg": { "$type": "dimension", "$value": "{wise.ref.size.320}" }
       },
       "radius": {
         "control": { "$type": "dimension", "$value": "{wise.ref.radius.pill}" },
@@ -313,6 +340,10 @@
         "primaryForeground": { "$type": "color", "$value": "{wise.sys.color.onActionPrimary}" },
         "primaryHoverContainer": { "$type": "color", "$value": "{wise.sys.color.actionPrimaryHover}" },
         "primaryPressedContainer": { "$type": "color", "$value": "{wise.sys.color.actionPrimaryPressed}" },
+        "secondaryContainer": { "$type": "color", "$value": "{wise.sys.color.actionSecondary}" },
+        "secondaryForeground": { "$type": "color", "$value": "{wise.sys.color.onActionSecondary}" },
+        "secondaryHoverContainer": { "$type": "color", "$value": "{wise.sys.color.actionSecondaryHover}" },
+        "secondaryPressedContainer": { "$type": "color", "$value": "{wise.sys.color.actionSecondaryPressed}" },
         "inverseContainer": { "$type": "color", "$value": "{wise.sys.color.actionInverse}" },
         "inverseForeground": { "$type": "color", "$value": "{wise.sys.color.onActionInverse}" },
         "height": { "$type": "dimension", "$value": "{wise.sys.size.controlLg}" },
@@ -340,6 +371,13 @@
         "labelSize": { "$type": "dimension", "$value": "{wise.sys.type.bodyMd.fontSize}" },
         "labelWeight": { "$type": "fontWeight", "$value": "{wise.sys.fontWeight.label}" }
       },
+      "shortcutCard": {
+        "size": { "$type": "dimension", "$value": "{wise.sys.size.contentSm}" },
+        "iconImageSize": { "$type": "dimension", "$value": "{wise.sys.size.controlXl}" }
+      },
+      "insightCard": {
+        "iconImageSize": { "$type": "dimension", "$value": "{wise.sys.size.controlXl}" }
+      },
       "card": {
         "background": { "$type": "color", "$value": "{wise.sys.color.surfaceRaised}" },
         "foreground": { "$type": "color", "$value": "{wise.sys.color.onSurfaceRaised}" },
@@ -356,6 +394,9 @@
         "radius": { "$type": "dimension", "$value": "{wise.sys.radius.cardLg}" },
         "padding": { "$type": "dimension", "$value": "{wise.sys.space.insetLg}" },
         "shadow": { "$type": "shadow", "$value": "{wise.sys.elevation.flat}" }
+      },
+      "heroCard": {
+        "height": { "$type": "dimension", "$value": "{wise.sys.size.contentLg}" }
       },
       "cardCarousel": {
         "shadow": { "$type": "shadow", "$value": "{wise.sys.elevation.card}" },

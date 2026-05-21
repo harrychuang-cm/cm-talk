@@ -8,7 +8,7 @@
 |---|---|---|
 | Token naming | 專案沒有既有 token 檔 | 新建 `wise-ref-*`、`wise-sys-*`、`wise-comp-*` |
 | Token layer | 無既有分層 | 建立 `ref -> sys -> comp` 三層，不允許 comp 直接引用 ref |
-| Grid / layout | 無程式碼，只見 iOS mobile screenshots | 建立 mobile-first 單欄、24px page padding、固定 bottom nav |
+| Grid / layout | 無程式碼，只見 iOS mobile screenshots | 建立 mobile-first 單欄、20px page padding、固定 bottom nav |
 | Animation keyframes | 無既有 keyframe | 新建 `wise-enter-up`、`wise-fade-in` 前綴 |
 | Shared components | 無 `src/components` 或 Storybook | 本次只建立規範與 token，不新增元件 |
 | i18n source | 無 `locales/` 或 i18n 設定 | 未來實作時所有 display text 必須接 i18n |
@@ -22,7 +22,7 @@
 核心 UI 特徵：
 
 - 高對比白底與深綠底並存。
-- Wise green 作為主要 CTA、active icon、進度條、正向狀態色。
+- Primary blue `#2A4AFF` 作為主要 CTA、active icon、進度條與 focus state。
 - 大型極粗 display typography 用在 onboarding、success、promo card。
 - 圓形 icon button、膠囊 CTA、圓角卡片，降低金融產品的距離感。
 - 列表資訊密度高，但每列都有穩定的 icon、title、amount、meta 層級。
@@ -43,7 +43,7 @@
    內容可以密，但觸控目標必須大。列表列距、48px 以上 icon button、56px CTA 是基本可用性底線。
 
 5. **Brand through geometry and texture**
-   品牌感來自螢光綠、深松綠、圓形/膠囊幾何與具材質感插畫，而不是大量裝飾邊框或背景花紋。
+品牌感來自高飽和 primary blue、深色 brand surface、圓形/膠囊幾何與具材質感插畫，而不是大量裝飾邊框或背景花紋。
 
 6. **Component hierarchy over decoration**
    頁面用 app bar、section title、card、list row、bottom nav 組成，避免一次性排版。視覺變化應透過 token variant 表達。
@@ -77,7 +77,7 @@ Token 檔案：
 
 ## 色彩系統
 
-主色由深松綠與螢光綠構成。輔色不是平均使用，而是用於資料分類、promo surface 或插畫承接。
+主色由 primary blue `#2A4AFF` 與深色 brand surface 構成。輔色不是平均使用，而是用於資料分類、promo surface 或插畫承接。
 
 | 角色 | Token | 用途 |
 |---|---|---|
@@ -142,7 +142,7 @@ Token 檔案：
 
 Mobile-first 單欄規則：
 
-- Page inline padding: `--wise-sys-space-page-inline`，24px。
+- Page inline padding: `--wise-sys-space-page-inline`，20px。
 - Section stack: `--wise-sys-space-stack-lg` 至 `--wise-sys-space-stack-xl`。
 - Row inline gap: `--wise-sys-space-inline-lg`。
 - Bottom nav height: `--wise-comp-bottom-nav-height`。
@@ -375,4 +375,3 @@ Icon：
 | `Wise iOS 49.png` | Home 下半部，contact avatar、黃色 feature cards、section hierarchy |
 | `Wise iOS 158.png` | Spending analysis，月份 selector、金額摘要、category list、資料分類色 |
 | `Wise iOS 389.png` | Cards，card carousel、圓形 action buttons、Apple Wallet CTA、bottom nav active state |
-

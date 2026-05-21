@@ -8,7 +8,7 @@
     "backgroundImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80",
     "sentiment": {
       "title": "市場情緒",
-      "summary": "β 1.34 目前組合偏進攻",
+      "summary": "Talk君目前持倉 β 1.34 組合偏進攻",
       "link": "說明",
       "infoLabel": "市場情緒資訊",
       "metrics": [
@@ -135,7 +135,7 @@
       "items": [
         {
           "type": "buy",
-          "action": "買進",
+          "action": "加倉",
           "ticker": "NVDA",
           "company": "NVIDIA",
           "date": "5/20 盤後",
@@ -144,7 +144,7 @@
         },
         {
           "type": "sell",
-          "action": "賣出",
+          "action": "清倉",
           "ticker": "TSLA",
           "company": "Tesla",
           "date": "5/17 開盤",
@@ -209,10 +209,11 @@
   },
   "shortcuts": {
     "items": [
+      { "label": "AI Bot", "iconImage": "./imgs/icon-05.png" },
       { "label": "聊天室", "iconImage": "./imgs/icon-03.png" },
-      { "label": "社團", "iconImage": "./imgs/icon-04.png" },
-      { "label": "內容專區", "iconImage": "./imgs/icon-01.png" },
-      { "label": "收藏", "iconImage": "./imgs/icon-02.png" }
+      { "label": "語音直播", "iconImage": "./imgs/icon-06.png" },
+      { "label": "知識庫", "iconImage": "./imgs/icon-04.png" },
+      { "label": "Beta計算機", "iconImage": "./imgs/icon-07.png" }
     ]
   },
   "nav": [

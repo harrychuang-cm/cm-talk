@@ -78,7 +78,8 @@ button {
 }
 
 .app-shell[data-theme="dark"] .sentiment-summary {
-  color: var(--wise-sys-color-chart-teal);
+  color: var(--wise-sys-color-on-action-secondary);
+  background: var(--wise-sys-color-action-secondary);
 }
 
 .app-shell[data-theme="dark"] .sentiment-link,
@@ -209,6 +210,11 @@ button {
   flex: 0 0 auto;
 }
 
+.home-header .icon-action {
+  color: var(--wise-sys-color-action-primary);
+  background: color-mix(in srgb, var(--wise-sys-color-action-primary) 12%, var(--wise-sys-color-surface));
+}
+
 .icon-action {
   display: grid;
   width: var(--wise-sys-size-control-sm);
@@ -287,7 +293,7 @@ button {
 .sentiment-header {
   display: flex;
   min-height: var(--wise-sys-size-control-lg);
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: var(--wise-sys-space-inline-md);
   padding: var(--wise-sys-space-inset-md) var(--wise-sys-space-inset-md) var(--wise-sys-space-inline-sm);
@@ -305,7 +311,7 @@ button {
   min-width: var(--wise-ref-space-0);
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--wise-sys-space-inline-sm);
+  gap: var(--wise-ref-space-3);
 }
 
 .sentiment-link,
@@ -322,7 +328,12 @@ button {
 }
 
 .sentiment-summary {
-  color: var(--wise-sys-color-chart-teal);
+  display: inline-flex;
+  width: fit-content;
+  padding: var(--wise-ref-space-4) var(--wise-ref-space-8);
+  border-radius: var(--wise-sys-radius-control);
+  color: var(--wise-sys-color-on-action-secondary);
+  background: var(--wise-sys-color-action-secondary);
   font-size: var(--wise-sys-type-label-sm-size);
   font-weight: var(--wise-sys-font-weight-label);
   line-height: var(--wise-sys-type-label-sm-line-height);
@@ -334,7 +345,7 @@ button {
   padding: var(--wise-ref-space-4) var(--wise-sys-space-inline-sm) var(--wise-ref-space-4) 6px;
   border: none;
   border-radius: var(--wise-sys-radius-control);
-  color: var(--wise-sys-color-on-surface-muted);
+  color: rgba(74, 77, 72, 0.6);
   background: color-mix(in srgb, var(--wise-sys-color-surface) 48%, transparent);
   font-size: var(--wise-ref-font-size-14);
   font-weight: var(--wise-sys-font-weight-label);
@@ -1023,6 +1034,17 @@ button {
   margin-block-end: calc(var(--wise-ref-space-0) - var(--wise-ref-space-12) - var(--wise-ref-space-3));
 }
 
+.feed-section .section-heading .eyebrow,
+.feed-section .tag,
+.feed-section .feed-author .icon-action {
+  color: var(--wise-sys-color-action-primary);
+}
+
+.feed-section .tag,
+.feed-section .feed-author .icon-action {
+  background: color-mix(in srgb, var(--wise-sys-color-action-primary) 12%, var(--wise-sys-color-surface));
+}
+
 .shortcut-section {
   padding-block: var(--wise-sys-space-stack-xs) var(--wise-ref-space-0);
 }
@@ -1108,9 +1130,9 @@ button {
 
 .shortcut-label {
   display: block;
-  font-size: var(--wise-sys-type-body-sm-size);
+  font-size: var(--wise-sys-type-label-sm-size);
   font-weight: var(--wise-sys-font-weight-label);
-  line-height: var(--wise-sys-type-body-sm-line-height);
+  line-height: var(--wise-sys-type-label-sm-line-height);
 }
 
 .app-shell.is-sheet-open {

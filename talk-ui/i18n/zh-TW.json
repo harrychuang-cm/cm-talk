@@ -212,6 +212,7 @@
       { "label": "AI Bot", "iconImage": "./imgs/icon-05.png" },
       { "label": "聊天室", "iconImage": "./imgs/icon-03.png" },
       { "label": "語音直播", "iconImage": "./imgs/icon-06.png" },
+      { "label": "研報", "iconImage": "./imgs/icon-02.png" },
       { "label": "知識庫", "iconImage": "./imgs/icon-04.png" },
       { "label": "Beta計算機", "iconImage": "./imgs/icon-07.png" }
     ]

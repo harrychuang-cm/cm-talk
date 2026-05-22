@@ -1127,8 +1127,8 @@ button {
 }
 
 .shortcut-icon.has-image {
-  width: var(--wise-comp-shortcut-card-icon-image-size);
-  height: var(--wise-comp-shortcut-card-icon-image-size);
+  width: calc(var(--wise-sys-size-control-md) + var(--wise-ref-space-2));
+  height: calc(var(--wise-sys-size-control-md) + var(--wise-ref-space-2));
   overflow: hidden;
   color: inherit;
   background: transparent;

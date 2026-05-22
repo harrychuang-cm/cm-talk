@@ -316,8 +316,8 @@ button {
   min-height: var(--wise-sys-size-control-lg);
   align-items: flex-start;
   justify-content: space-between;
-  gap: var(--wise-sys-space-inline-md);
-  padding: var(--wise-sys-space-inset-md) var(--wise-sys-space-inset-md) var(--wise-sys-space-inline-sm);
+  gap: var(--wise-ref-space-0);
+  padding: var(--wise-sys-space-inset-md) var(--wise-sys-space-inset-md) 0 var(--wise-sys-space-inset-sm);
   background: transparent;
 }
 
@@ -341,7 +341,7 @@ button {
 }
 
 .sentiment-title {
-  margin: var(--wise-ref-space-0);
+  margin: var(--wise-ref-space-0) var(--wise-ref-space-0) var(--wise-ref-space-0) calc(var(--wise-ref-space-12) + var(--wise-ref-space-3));
   color: var(--wise-sys-color-on-surface);
   font-size: var(--wise-sys-type-title-md-size);
   font-weight: var(--wise-sys-font-weight-title);
@@ -351,6 +351,7 @@ button {
 .sentiment-summary {
   display: inline-flex;
   width: fit-content;
+  margin: var(--wise-ref-space-0) var(--wise-ref-space-0) var(--wise-ref-space-20) var(--wise-ref-space-20);
   padding: var(--wise-ref-space-4) var(--wise-ref-space-8);
   border-radius: var(--wise-sys-radius-control);
   color: var(--wise-sys-color-on-action-secondary);
@@ -382,9 +383,11 @@ button {
 }
 
 .sentiment-body {
-  min-height: var(--wise-ref-size-80);
+  height: fit-content;
   gap: var(--wise-sys-space-inline-md);
-  padding: var(--wise-sys-space-inset-md);
+  padding-top: 6px;
+  padding-bottom: var(--wise-ref-space-16);
+  padding-inline: var(--wise-sys-space-inset-sm);
   background: transparent;
 }
 

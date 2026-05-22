@@ -132,7 +132,6 @@ function renderSentimentCard(sentiment) {
   const header = createElement("div", "sentiment-header");
   const titleWrap = createElement("div", "sentiment-title-wrap");
   titleWrap.append(createElement("h2", "sentiment-title", sentiment.title));
-  titleWrap.append(createElement("span", "sentiment-summary", sentiment.summary));
 
   const link = createElement("button", "sentiment-link");
   link.type = "button";
@@ -152,7 +151,7 @@ function renderSentimentCard(sentiment) {
   chevron.append(icon("chevronRight"));
   body.append(chevron);
 
-  card.append(header, body);
+  card.append(header, body, createElement("span", "sentiment-summary", sentiment.summary));
   return card;
 }
 
